@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#F5F5F5">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginStart="16dp"
+        android:id="@+id/navigation_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/sort_chooser" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/sort_chooser"
+        style="@style/Widget.AppCompat.CompoundButton.Switch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/filter_chooser"
+        app:srcCompat="@color/colorAccent" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/filter_chooser"
+        style="@style/Widget.AppCompat.CompoundButton.Switch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+</RelativeLayout>
